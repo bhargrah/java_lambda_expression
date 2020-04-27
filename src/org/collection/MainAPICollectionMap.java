@@ -29,6 +29,7 @@ public class MainAPICollectionMap {
 
 	static List<Person> people = new ArrayList<>(Arrays.asList(p1, p2, p3, p4, p5, p6, p7, p8, p9));
 
+	@SuppressWarnings("unused")
 	private static void forEach() {
 
 		printerLamda.accept("\nIterating using lamda - \n");
@@ -66,21 +67,27 @@ public class MainAPICollectionMap {
 		System.out.println("People from New York : " + map.getOrDefault(newYork, Collections.EMPTY_LIST));
 	}
 
-	
-	public static void main(String[] args) {
+	private static void computeIfAbsent(Map<City, List<Person>> map) {
+		System.out.println(map.get(paris) == null ? "No entry present for " + paris : "Entry present for " + paris);
 
-		Map<City, List<Person>> map = new HashMap<>(); // empty map
+		// regular way of adding value , has to be done every time when adding entry in
+		// map
+		if (map.get(paris) == null) {
+			map.put(paris, new ArrayList<>());
+			map.get(paris).add(p1);
+		} else {
+			map.get(paris).add(p1);
+		}
 
-		// Mimic behavior of putIfAbsent
-		 putIfAbsent(map);
-		
-		System.out.println("\n\n");
-
-		map.computeIfAbsent(newYork, city -> new ArrayList<>()).add(p2);
+		map.computeIfAbsent(newYork, city -> new ArrayList<>()).add(p2); // single line , clean code
 		map.computeIfAbsent(newYork, city -> new ArrayList<>()).add(p3);
 
 		System.out.println("People from Paris : " + map.getOrDefault(paris, Collections.EMPTY_LIST));
 		System.out.println("People from New York : " + map.getOrDefault(newYork, Collections.EMPTY_LIST));
+
+	}
+
+	private static void merge() {
 
 		Map<City, List<Person>> map1 = new HashMap<>();
 		map1.computeIfAbsent(newYork, city -> new ArrayList<>()).add(p1);
@@ -112,6 +119,22 @@ public class MainAPICollectionMap {
 
 		System.out.println("map2 (unchanged)");
 		map2.forEach((city, people) -> System.out.println(city + " : " + people));
+
+	}
+
+	public static void main(String[] args) {
+
+		Map<City, List<Person>> map = new HashMap<>(); // empty map
+
+		// Mimic behavior of putIfAbsent
+		putIfAbsent(map);
+
+		// computeIfAbsent
+		computeIfAbsent(map);
+
+		// merge
+		merge();
+
 	}
 
 }

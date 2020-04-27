@@ -2,6 +2,7 @@ package org.collection;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
@@ -38,11 +39,12 @@ public class MainAPICollectionList {
 
 	}
 
-	private static void removeIf() { // takes predicate
+	@SuppressWarnings("unused")
+	private static void removeIf() { // takes predicate , inplace replacement
 
 		printerLamda.accept("\nIterating using lamda - \n");
 
-		Consumer<List> personLstInterator = people -> people.forEach(person -> System.out.println(person));
+		Consumer<List<Person>> personLstInterator = people -> people.forEach(person -> System.out.println(person));
 		personLstInterator.accept(people);
 
 		// filter person less than < some years of age
@@ -57,16 +59,39 @@ public class MainAPICollectionList {
 
 	}
 
+	@SuppressWarnings("unused")
 	private static void replaceAll() {
+
+		people.forEach(person -> System.out.println(person.getName()));
+
+		// turn all entries to upper case
+		people.replaceAll(person -> new Person(person.getName().toUpperCase(), person.getAge()));
+
+		people.forEach(person -> System.out.println(person.getName()));
 
 	}
 
 	private static void sort() {
 
+		printerLamda.accept("\n\nOriginal List :");
+		people.forEach(people -> System.out.print("[ " + people.getName() + " : " + people.getAge() + "],"));
+		people.sort(Comparator.comparing(Person::getAge));
+		people.sort(Comparator.comparing(person -> person.getAge()));
+		printerLamda.accept("\n\nSorted by Age :");
+		people.forEach(people -> System.out.print("[ " + people.getName() + " : " + people.getAge() + "],"));
+		
+		people.sort(Comparator.comparing(Person::getAge).reversed());
+		printerLamda.accept("\n\nSorted by Age (decending):");
+		people.forEach(people -> System.out.print("[ " + people.getName() + " : " + people.getAge() + "],"));
+
+		people.sort(Comparator.comparing(Person::getName));
+		people.sort(Comparator.comparing(person -> person.getName()));
+		printerLamda.accept("\n\nSorted by Name :");
+		people.forEach(people -> System.out.print("[ " + people.getName() + " : " + people.getAge() + "],"));
+
 	}
 
 	public static void main(String[] args) {
-
 
 		// forEach syntax
 		forEach();
