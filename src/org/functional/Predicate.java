@@ -1,9 +1,11 @@
 package org.functional;
 
+// user defined Predicate , check actual implementation also in java docs
+
 @FunctionalInterface
 public interface Predicate<T> {
 
-    public boolean test(T t);
+    public boolean test(T t);   // see the signature , it returns only boolean
     
     public default Predicate<T> and(Predicate<T> other) {
         return t -> test(t) && other.test(t) ;

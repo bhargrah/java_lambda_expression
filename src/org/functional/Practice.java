@@ -1,5 +1,7 @@
 package org.functional;
 
+import java.util.function.Function;
+
 public class Practice {
 
 	public static void main(String[] args) {
@@ -19,6 +21,17 @@ public class Practice {
 		Arithematic<Integer> square_plus_cube = square.add(cube);
 		
 		System.out.println(square_plus_cube.apply(2));
+		
+		
+		
+		Function<Integer,Integer> squar = n -> (n*n);
+		System.out.println(squar.apply(4));
+		
+		// check more on function and predicate 
+		// To - Do
+		// Write Predicate and Functoin from scratch 
+		// Write custome classes and examples 
+		// read about it more
 		
 	}
 
