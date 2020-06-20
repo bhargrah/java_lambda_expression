@@ -9,4 +9,4 @@
 
 # Cheat Sheet
 
-![](https://github.com/bhargrah/java_lambda_expression/tree/master/src/resources/CheatSheet.png)
+![](https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/CheatSheet.png)
