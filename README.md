@@ -7,6 +7,6 @@
 #### Function -- takes an object and returns another object
 #### Predicate -- takes an object and returns a boolean 
 
-# Cheat Sheet
+## Cheat Sheet
 
 ![](https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/CheatSheet.png)
