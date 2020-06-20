@@ -8,3 +8,5 @@
 ### Predicate -- takes an object and returns a boolean 
 
 # Cheat Sheet
+
+![](https://github.com/bhargrah/java_lambda_expression/tree/master/src/resources/CheatSheet.png)
