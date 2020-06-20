@@ -10,3 +10,8 @@
 ## Cheat Sheet
 
 ![](https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/CheatSheet.png)
+
+## Performance 
+
+- Lambdas are invoked using invokeDynamics (introduced in java7) , which are very fast 
+- Make sure to write code while taking care Autoboxing and Unboxing
