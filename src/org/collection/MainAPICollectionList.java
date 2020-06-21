@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
+import org.data.Person;
+
 public class MainAPICollectionList {
 
 	public static final Consumer<String> printerLamda = s -> System.out.println(s);

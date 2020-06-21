@@ -1,12 +1,15 @@
 package org.functional.concepts;
 
-public class SimpleConsumerExample {
+import org.data.DataGenerator;
+
+public class SimpleConsumerExample implements DataGenerator {
+	
+	
 	
 	public static void main(String[] args) {
 		
 		
-		SimpleConsumer<String> print = s -> System.out.print(s);		
-		print.accept("Hello");
+		
 		
 
 		

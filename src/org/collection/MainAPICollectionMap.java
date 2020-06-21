@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 
+import org.data.Person;
+
 public class MainAPICollectionMap {
 
 	public static final Consumer<String> printerLamda = s -> System.out.println(s);

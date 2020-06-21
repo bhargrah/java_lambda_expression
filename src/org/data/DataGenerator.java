@@ -4,9 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.collection.City;
-import org.collection.Person;
-
 public interface DataGenerator {
 	
 	public static Person p1 = new Person("Alice", 23);
