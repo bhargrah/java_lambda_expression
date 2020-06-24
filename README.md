@@ -15,3 +15,7 @@
 
 - Lambdas are invoked using invokeDynamics (introduced in java7) , which are very fast 
 - Make sure to write code while taking care Autoboxing and Unboxing
+
+## Repos to Look at 
+https://github.com/kousen/java_upgrade
+https://github.com/kousen/java_8_recipes
