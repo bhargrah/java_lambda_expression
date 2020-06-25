@@ -19,3 +19,4 @@
 ## Repos to Look at 
 - https://github.com/kousen/java_upgrade
 - https://github.com/kousen/java_8_recipes
+- https://www.kousenit.com/java8/
