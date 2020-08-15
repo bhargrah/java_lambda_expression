@@ -6,16 +6,16 @@
 * Function -- takes an object and returns another object
 * Predicate -- takes an object and returns a boolean 
 
-## Cheat Sheet
+### Cheat Sheet
 ![](https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/CheatSheet.png)
 
-## Performance 
+### Performance 
 * Lambdas are invoked using invokeDynamics (introduced in java7) , which are very fast 
 * Make sure to write code while taking care Autoboxing and Unboxing
 
 
 # Streams
-## Cheat Sheet
+### Cheat Sheet
 ![](https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/java8_streams_cheat_sheet.pdf)
 
 ## Repos to Look at 
