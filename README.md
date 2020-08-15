@@ -1,6 +1,6 @@
 # Functional Interface 
 
-## java.util.funciton
+### java.util.funciton
 * Consumer -- consumer object and dosen't return anything 
 * Supplier -- provides an object and take no parameter 
 * Function -- takes an object and returns another object
