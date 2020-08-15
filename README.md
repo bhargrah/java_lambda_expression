@@ -16,8 +16,7 @@
 
 # Streams
 ### Cheat Sheet
-https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/java8_streams_cheat_sheet.pdf
-(https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/index.html)
+![](https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/streams.png)
 
 ## Repos to Look at 
 - https://github.com/kousen/java_upgrade
