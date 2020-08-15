@@ -7,7 +7,8 @@
 * Predicate -- takes an object and returns a boolean 
 
 ### Cheat Sheet
-![](https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/CheatSheet.png)
+(https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/CheatSheet.png)
+(https://github.com/bhargrah/java_lambda_expression/blob/master/src/resources/function.png)
 
 ### Performance 
 * Lambdas are invoked using invokeDynamics (introduced in java7) , which are very fast 
