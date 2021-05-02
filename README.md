@@ -1,7 +1,7 @@
 # Lambdas
-• A lambda expression is a method without a name that is used to pass around be‐havior as if it were data.
-• Lambda expressions look like this: BinaryOperator<Integer> add = (x, y) → x + y.
-• A functional interface is an interface with a single abstract method that is used as the type of a lambda expression.
+* A lambda expression is a method without a name that is used to pass around be‐havior as if it were data.
+* Lambda expressions look like this: BinaryOperator<Integer> add = (x, y) → x + y.
+* A functional interface is an interface with a single abstract method that is used as the type of a lambda expression.
 
 # Functional Interface 
 
