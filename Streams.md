@@ -20,3 +20,7 @@ List<Integer> together = Stream.of(asList(1, 2), asList(3, 4))
                                .collect(toList());
 assertEquals(asList(1, 2, 3, 4), together);
 ```
+## reduce
+* Use the reduce operation when you’ve got a collection of values and you want to generate a single result
+
+![image](https://user-images.githubusercontent.com/15336266/116804579-6f160180-ab3d-11eb-8bef-d0f93d120bb2.png)
