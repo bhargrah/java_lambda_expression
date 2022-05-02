@@ -1,4 +1,4 @@
-package org.collectors.usages;
+package org.collectors.partition;
 
 import java.util.Arrays;
 import java.util.List;
@@ -10,7 +10,7 @@ public class PartitioningByExample {
 	
 	public static void main(String[] args) {
 		
-		// Example for numbers 
+		// Example for numbers
 		List<Integer> numberList = Arrays.asList(-2,-1,-10,56,0,1,2,3,4,5,6,7,8,8);
 		System.out.println(numberList);
 		
