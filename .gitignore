@@ -3,4 +3,4 @@
 *.projects
 *.prefs
 *.project
-*.DS_Store
+/src/*.DS_Store
