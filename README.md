@@ -8,10 +8,10 @@
 
 ### java.util.funciton
 
-* Consumer -- consumer object and dosen't return anything
-* Supplier -- provides an object and take no parameter
-* Function -- takes an object and returns another object
-* Predicate -- takes an object and returns a boolean
+* Consumer : accepts() :consumer object and dosen't return anything
+* Supplier : get() :provides an object and take no parameter
+* Function : apply() :takes an object and returns another object
+* Predicate : test()  :takes an object and returns a boolean
 
 ### Cheat Sheet
 
