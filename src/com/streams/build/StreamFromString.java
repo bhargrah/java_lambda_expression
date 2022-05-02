@@ -6,9 +6,11 @@ public class StreamFromString {
 
         String sentence = "the quick brown fox jums over the lazy dog";
 
-        sentence.chars()
+        String debug = "aaaabbbeeeettsswweesds";
+
+        debug.chars()
                 .mapToObj(Character::toString) // map integer to actual ascii character
-                .filter(letter -> !letter.equals(" ")) // remove empty letters
+                .filter(letter -> !letter.equals("a")) // remove empty letters
                 .distinct()
                 .sorted()
                 .forEach(System.out::print);
