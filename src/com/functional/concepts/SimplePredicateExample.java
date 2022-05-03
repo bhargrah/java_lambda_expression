@@ -16,13 +16,11 @@ public class SimplePredicateExample {
 
     // Method Reference
     SimplePredicate<String> isEmpty =
-        String
-            ::isEmpty; // this is possible only when methods takes no argument --> public boolean
-                       // isEmpty() {
+        String::isEmpty; // this is possible only when methods takes no argument --> public boolean
+    // isEmpty() {
     SimplePredicate<String> isBlank =
-        String
-            ::isBlank; // this is possible only when methods takes no argument --> public boolean
-                       // isBlank() {
+        String::isBlank; // this is possible only when methods takes no argument --> public boolean
+    // isBlank() {
 
     System.out.println(isEmpty.test("ui"));
     System.out.println(isBlank.test(""));

@@ -5,17 +5,17 @@ package com.functional;
 @FunctionalInterface
 public interface Predicate<T> {
 
-  public static <U> Predicate<U> isEqualsTo(U u) {
+  static <U> Predicate<U> isEqualsTo(U u) {
     return s -> s.equals(u);
   }
 
-  public boolean test(T t); // see the signature , it returns only boolean
+  boolean test(T t); // see the signature , it returns only boolean
 
-  public default Predicate<T> and(Predicate<T> other) {
+  default Predicate<T> and(Predicate<T> other) {
     return t -> test(t) && other.test(t);
   }
 
-  public default Predicate<T> or(Predicate<T> other) {
+  default Predicate<T> or(Predicate<T> other) {
     return t -> test(t) || other.test(t);
   }
 }
