@@ -39,7 +39,7 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Product{" +
+        return "Book{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", price=" + price +
