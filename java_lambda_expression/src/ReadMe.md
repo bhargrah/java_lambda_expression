@@ -27,3 +27,5 @@ V getOrDefault(Object key , V defaultValue);
 # Google Java Code Formatting Plugin
 
 https://plugins.jetbrains.com/plugin/8527-google-java-format/versions
+
+https://plugins.jetbrains.com/plugin/10044-atom-material-icons
